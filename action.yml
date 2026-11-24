@@ -1,5 +1,5 @@
 name: Training dependency audit
-description: Checks the dependency policy
+description: Checks dependency policy
 runs:
   using: composite
   steps:
